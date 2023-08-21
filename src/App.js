@@ -16,14 +16,14 @@ function App() {
         <h4> ReactBLOG </h4>
       </div>
 
-      <div className="list">
-        <button onClick={()=>{
+      <button onClick={()=>{
           let copy = [...글제목];
           copy[0]='여자코트 추천';
           글제목변경(copy);
-        }}>😎글수정</button>
+        }}>글수정</button>
+
+      <div className="list">
         <h4 >{ 글제목[0] } <br/>
-        
         <p>
         <span onClick={ ()=>{
           좋아요변경(좋아요+1)
